@@ -1,95 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 .container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    min-height: 100vh;
-}
-.notes-list {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.note {
-    background-color: #78f390;
-    border-radius: 10px;
-    padding: 1rem;
-    min-height: 170px;
+    margin: 10px ;
+    border: 1px solid teal;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    white-space: pre-wrap;
     justify-content: space-between;
+    text-align: center;
 }
-.note.new {
-    background-color: #67d7cc;
+.button {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid teal;
+    
 }
-textarea {
-    background-color: #67d7cc;
-    border: none;
-    resize: none;
+.title {
+    text-align: center;
+    font-size: 40px;
 }
-textarea:focus {
-    outline: none;
-}
-.save {
-    border: none;
-    padding: 7px;
-    border-radius: 15px;
-    background-color: rgba(218, 164, 164, 0.315);
-}
-.save:hover {
-    cursor: pointer;
-    background-color:rgb(59, 192, 192);
-
-}
-.note-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.delete-icon {
-    cursor: pointer;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    background-color:rgb(233,233,233);
-    border-radius: 10px;
+.inputInput {
+    border: 3px solid teal;
+    margin: 10px;
     padding: 5px;
-    margin-bottom: 1.5em;
 }
-.search-input {
-    border: none;
-    background-color:rgb(233,233,233);
+.zero {
+    text-align: center;
+    font-size: 60px;
+    color: brown;
 }
-.search-input:focus {
-    outline: none;
+.post-enter {
+    transform: translateX(-350px) ;
 }
-.notes {
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
+.post-enter-active {
+    transform: translateX(0px) ;
+    transition: all 500ms ease-in;
 }
-.dark-mode {
-    background-color: black;
+.post-exit {
+    opacity: 1;
 }
-.dark-mode h1 {
-    color: white;
-}
-.dark-mode button {
-    color: white;
+.post-exit-active {
+    transform: translateX(-350px) ;
+    transition: all 500ms ease-in;
 }
